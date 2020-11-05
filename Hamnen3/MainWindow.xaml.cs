@@ -146,10 +146,10 @@ namespace Hamnen3
                 {
                     GetStatisticsInHarbour();
                 }
-
-                PrintHarboursToListBoxes(test_Listbox1, 1, 32);
-                PrintHarboursToListBoxes(test_Listbox2, 33, 64);
             }
+
+            PrintHarboursToListBoxes(test_Listbox1, 1, 32);
+            PrintHarboursToListBoxes(test_Listbox2, 33, 64);
 
             WriteTxt();
         }
