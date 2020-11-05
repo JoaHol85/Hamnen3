@@ -25,6 +25,7 @@ namespace Hamnen3
         static int totalNumberOfMotorboatsInHarbour = 0;
         static int totalNumberOfSailboatsInHarbour = 0;
         static int totalNumberOfRowingboatsInHarbour = 0;
+        static int numberOfShipsCreatedEachDay = 5;         // Changes the number of boats arriving to the harbour each day.
 
         int dissmissedShipsToday = 0;
         int dissmissedShips = 0;
@@ -157,7 +158,7 @@ namespace Hamnen3
         private static void IncomingBoats()
         {
             incomingBoats.Clear();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < numberOfShipsCreatedEachDay; i++)
             {
                 incomingBoats.Add(GetRandomBoat());
             }
@@ -620,6 +621,7 @@ namespace Hamnen3
                     listBox.Items.Add($"{i}\tTom plats");
             }
         }
+
     }
 }
 
